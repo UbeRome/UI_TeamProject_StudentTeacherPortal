@@ -1,0 +1,161 @@
+<!-- html for parent page -->
+<html>
+
+<head>
+  <title>Parent Page</title>
+
+  <!-- include jquery -->
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+  <!-- include scripts -->
+  <script src="./parent.js"></script>
+  <!-- include bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+   <link rel="stylesheet" href="layout.css">
+</head>
+
+
+
+<body>
+
+   <div class="mainBox">
+
+      <div class="calenderTitle">
+         <h3 id="studentName">Student: Stuart Little</h3>
+         <h4>October 2020</h4>
+      </div>
+
+      <div class="mainCalender">
+
+         <table class = "mainTable">
+            <tr class = "days">
+               <td id="Sunday">Sunday</td>
+               <td id="Monday">Monday</td>
+               <td id="Tuesday">Tuesday</td>
+               <td id="Wednesday">Wednesday</td>
+               <td id="Thursday">Thursday</td>
+               <td id="Friday">Friday</td>
+               <td id="Saturday">Saturday</td>
+            </tr>
+            <tr class = "date">
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td>1</td>
+               <td>2</td>
+               <td>3</td>
+            </tr>
+
+            <tr class = "date">
+               <td>4</td>
+               <td>5</td>
+               <td>6</td>
+               <td>7</td>
+               <td>8</td>
+               <td>9</td>
+               <td>10</td>
+            </tr>
+            <tr class = "date">
+               <td>11</td>
+               <td>12</td>
+               <td id ="day13">13 <a class="hw" href="#">Reading: Read 2-8 </a></td>
+               <td id="day14">14 <a class="hw" href="#">Math: Read Ch 1 </a></td>
+               <td>15</td>
+               <td id = "day16">16 <a class="hw" href="#">Math: Problem sets  2-6</a>
+               	<img id="calendarIcon" src="../assets/hw.png">
+               </td>
+               <td>17</td>
+            </tr>
+            <tr class = "date">
+               <td>18</td>
+               <td id = "day19">19 <a class="hw" href="#">Draw Yourself</a></td>
+               <td>20</td>
+               <td>21</td>
+               <td>22</td>
+               <td>23</td>
+               <td>24</td>
+            </tr>
+            <tr class = "date">
+               <td>25</td>
+               <td id = "day26">26 <a class="hw" href="#">Bill Nye the Science guy</a></td>
+               <td>27</td>
+               <td>28</td>
+               <td>29</td>
+               <td>30</td>
+               <td>31</td>
+            </tr>
+
+         </table>
+      </div>
+
+   </div>
+
+   <div class="sideBox">
+
+      <div class="dailyTitle">
+         <br>
+         <h4>Daily Feedback</h4>
+      </div>
+
+      <div class="subjects">
+         <table>
+            <tr>
+               <td>
+                  <a id = "mathSubject" href="mathGrade.html">Math</a>
+                  <img id= "emoji" src="../assets/happy.png" alt="happyEmoji">
+                  <button type="button" class="notes" id = "mathBtn">Notes</button>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <a id="scienceSubject" href="scienceGrade.html">Science</a>
+                 <img id="emoji" src="../assets/medium.png" alt="mehEmoji" >
+                  <button type="button" class="notes" id = "SciBtn">Notes</button>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <a id="historySubject" href="historyGrade.html" href="">History</a>
+                  <img id="emoji" src="../assets/happy.png" alt="happyEmoji" >
+                  <button type="button" class="notes" id = "histBtn" >Notes</button>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <a id="readingSubject" href="readingGrade.html" href="">Reading</a>
+                  <img id ="emoji" src="../assets/upset.png" alt="upsetEmoji" >
+                  <button type="button" class="notes" id = "readBtn" >Notes</button>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <a id = "artSubject" href="grade.html">Art</a>
+                  <img id="emoji" src="../assets/happy.png" alt="happyEmoji" >
+                  <button type="button" class="notes" id = "artBtn">Notes</button>
+               </td>
+            </tr>
+            <tr>
+               <td><button onclick = "location.href = '../index.html';"type="button" class="logout">LOGOUT</button></td>
+
+            </tr>
+         </table>
+      </div>
+   </div>
+
+   <div class="noteBox">
+
+      <div id = "noteContant" class="noteContant">
+       <span id="exit">&times;</span>
+       <div><h4 id = "subject">Art</h4><div>
+       <br>
+       <p id = "comment1" class = "comments">Nice communication skills</p>
+       <p id = "comment2" class = "comments">Drawings were really cute</p>
+     </div>
+
+   </div>
+</body>
+
+</html>

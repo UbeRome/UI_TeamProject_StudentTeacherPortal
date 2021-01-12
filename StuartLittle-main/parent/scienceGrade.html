@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Grades page</title>
+
+      <link rel="stylesheet" href="gradeStyle.css">
+
+
+   </head>
+   <body>
+      <div class="rightBox">
+            <h4 id="gradeWork">GRADED WORK</h4>
+            <TABLE>
+               <TR>
+                  <TD id = "col1">Assignments:</TD>
+                  <TD id = "col2">Grade:</TD>
+                  <TD id = "col3">Date:</TD>
+               </TR>
+               <TR>
+                  <TD>Solar System</TD>
+                  <TD>10/10</TD>
+                  <TD>9/28/20</TD>
+               </TR>
+               <TR>
+                  <TD>Mars terrrain</TD>
+                  <TD>10/10</TD>
+                  <TD>9/29/20</TD>
+               </TR>
+               <TR>
+                  <TD>Earth</TD>
+                  <TD>10/10</TD>
+                  <TD>9/30/20</TD>
+               </TR>
+               <TR>
+                  <TD>Venus clouds</TD>
+                  <TD>10/10</TD>
+                  <TD>9/30/20</TD>
+               </TR>
+
+
+            </TABLE>
+
+      </div>
+
+      <div class="leftBox">
+         <!-- <h4>RIGHT BOX</h4> -->
+
+         <div class="class">
+            <h4>SUBJECT</h4>
+            <h4 id="subject">SCIENCE</h4>
+         </div>
+
+         <div class="teacherInfo">
+            <h4>Name: Ms. Frizzle </h4>
+            <h4>Email: science_fun@gmail.com</h4>
+         </div>
+
+         <div class = "grades">
+            <h4 id="overall">Overall Grade:</h4>
+            <p id="Grade">A</p>
+         </div>
+
+      </div>
+
+      <button id = "goBack" onclick="goBack()">Go Back</button>
+
+      <script>
+         function goBack() {
+         window.history.back();
+      }
+      </script>
+   </body>
+</html>

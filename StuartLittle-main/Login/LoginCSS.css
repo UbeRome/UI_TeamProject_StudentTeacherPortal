@@ -1,0 +1,112 @@
+/* #mainColumn {
+} */
+/*justify-content: space-between, around*/
+/*turn this off if you want the things to go out*/
+html, body{
+  height: 100%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.topTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #56B4E9;
+  align-self: stretch;
+  text-align: center;
+  height: 6%;
+}
+#TitleText {
+  font-style: initial;
+  font-size: 22px;
+}
+
+.loginInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  width: 30%;
+}
+
+/*within loginfo*/
+.Img{
+  height: 30%;
+  width: 18%; 
+}
+.Img2{
+  height: 34%;
+  width: 18%; 
+}
+
+.Label1{
+  font-size: 25px;
+}
+.Label2{
+  font-size: 25px;
+}
+.input {
+  height: 40px;
+  width: 250px;
+}
+
+
+#loginBtn{
+  background-color: #56B4E9; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#backBtn{
+  background-color: #56B4E9; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#parentBtn{
+  background-color: #56B4E9; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#teacherBtn{
+  background-color: #56B4E9; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
